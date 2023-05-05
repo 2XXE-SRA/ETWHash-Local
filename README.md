@@ -12,7 +12,7 @@ C:\Temp\>EtwHash.exe .\trace.etl
 nessus::LAB:D27DD3110B795705:25669980911E6CE0693E01796FA34B6E:01010000000000004C6B85AE6178D901EB33D5D6CF85093A00000000020008005700500041004400010008005700500041004400040008007700700061006400030008007700700061006400070008004C6B85AE6178D901060004000200000008003000300000000000000001000000002000003E77D791FEFF45C00D86B0D8744093A2F75712A53AC94F62AD16FF5B4AB54BAE0A0010000000000000000000000000000000000009001C0063006900660073002F003100320037002E0030002E0030002E0031000000000000000000
 ```
 
-Traces can be captured using [logman.exe](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/logman-create) either locally 
+Traces can be captured using [logman.exe](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/logman-create-trace) either locally 
 
 ```
 logman create trace [sessionname] -ets -p Microsoft-Windows-SMBServer 0x0 -o [filename.etl]
@@ -23,6 +23,8 @@ or remotely
 ```
 logman create trace [sessionname] -ets -p Microsoft-Windows-SMBServer 0x0 -o [filename.etl] -s [target]
 ```
+
+---
 
 
 # About
